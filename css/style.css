@@ -1,0 +1,169 @@
+*{     /*Внутрішні та зовнішні відступи*/
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*::after{  /*Міняє підрахунок ширини блока так щоб нам було краще верстати*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}/*Забирає лінії обводки в деяких браузерах*/
+a:focus,a:active{outline: none;}
+
+nav,footer,head,aside{display: block;}/*Робить ці теги блочними*/
+
+html,body{/*Вирівнює поведінку парвметрів шрифтів та елементів різних браузерів*/
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}/*Для наслідування шрифтів*/
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+
+
+
+
+body{
+    background: url(../img/frukt_dackground.jpg) repeat;
+}
+
+
+.header{
+    width: 1300px;
+    height: 250px;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: 2px solid rgb(131, 31, 31);
+    margin: 20px auto 0 auto;
+    opacity: 80%;
+}
+
+.top{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Mochiy Pop One";
+    color: cadetblue;
+    padding: 5px 0 25px 0;
+}
+
+.bottom{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Cabin";
+    color: rgb(78, 147, 150);
+}
+
+.beginning{
+    width: 1300px;
+    height: 550px;
+    background-color: hsl(22, 57%, 76%);
+    margin: 0 auto 0 auto;
+    border-bottom: 2px solid rgb(235, 208, 56);
+}
+
+.beginning_peach{
+    font-size: 50px;
+    font-family: "barlow";
+    margin: 0px 0px 15px 10px;
+    color: #ff000096;
+}
+
+.peach{
+    width: 600px;
+    height: 500px;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+.beginning_p{
+    width: 650px;
+    height: 400px;
+}
+
+.beginning_text{
+    font-size: 30px;
+    margin: 0px 0px 15px 10px;
+    font-family: "bitter";
+    color: rgb(95, 80, 80);
+
+}
+
+.pyapple{
+    width: 600px;
+    height: 500px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.beginning_2{
+    width: 1300px;
+    height: 550px;
+    background-color: hsl(61, 82%, 62%);
+    margin: 0 auto 0 auto;
+    border-bottom: 2px solid rgb(23, 92, 219);
+}
+
+.beginning_p_2{
+    display: flow-root;
+    width: 650px;
+    height: 400px;
+}
+
+.beginning_pyapple{
+    font-size: 50px;
+    font-family: "barlow";
+    margin: 0px 10px 15px 5px;
+    color: #ff000096;
+}
+
+.beginning_3{
+    width: 1300px;
+    height: 550px;
+    background-color: hsl(194, 76%, 73%);
+    margin: 0 auto 0 auto;
+    border-bottom: 2px solid rgb(104, 184, 238);
+}
+
+.beginning_4{
+    width: 1300px;
+    height: 550px;
+    background-color: hsl(0, 68%, 58%);
+    margin: 0 auto 0 auto;
+    border-bottom: 2px solid rgb(23, 92, 219);
+}
+
+.beginning_grapefruit{
+    font-size: 50px;
+    font-family: "barlow";
+    margin: 0px 10px 15px 5px;
+    color: #9dff0096;
+}
+
+.beginning_5{
+    width: 1300px;
+    height: 550px;
+    background-color: hsl(123, 75%, 73%);
+    margin: 0 auto 0 auto;
+    border-bottom: 2px solid rgb(104, 184, 238);
+}
+
+
+
