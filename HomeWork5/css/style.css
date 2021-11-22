@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+}
+
+table {
+    border-radius: 3px;
+    border-collapse: collapse;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px rgb(81 81 81);
+    width: 1000px;
+    height: 220px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+tr {
+    border: 1px solid rgb(81 81 81)
+}
+
+th {
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+}
+
+th img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+td img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.text {
+    color: rgb(122, 122, 122);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name2 {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    margin: 0 7px 0 3px;
+}
+
+.div {
+    display: flex;
+    position: absolute;
+    right: 470px;
+    top: 532px;
+}
+
+.search {
+    padding: 10px 0 10px 33px;
+    border-radius: 7px;
+    background: url(../img/search.png) no-repeat 7px 12px;
+    border: 1px solid #6d6d6d;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+}
+
+
