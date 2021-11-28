@@ -6,138 +6,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
 </head>
 <body>
-    <table>
+    <div class="table">
+        <table class="file_table">
         <thead>
             <tr>
-                <th>
-                    <div class="name">
-                        Name
-                    <img src="./img/triangle.png" alt="triangle">
-                    </div>
-                </th>
-                <th>Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>File.pdf</td>
-                <td class="text">3 mins ago</td>
-                <td><img src="./img/option.png" alt="option"></td>
-            </tr>
-            <tr>
-                <td>File.pdf</td>
-                <td class="text">Yesterday</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
-                </td>
-            </tr>
-            <tr>
-                <td>File.pdf</td>
-                <td class="text">June 1st, 2019</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table>
-        <thead>
-            <tr>
-                <th>
-                    <div class="name">
-                        <img src="./img/check2.png" alt="check">
+                <th class="col1">
                     Name
-                    <img src="./img/triangle.png" alt="triangle">
-                    </div>
+                    <a class="button" href="#">
+                        <span class="material-icons">
+                            arrow_drop_down
+                        </span>
+                    </a>
                 </th>
-                <th>Date</th>
+                <th colspan="2" class="col2" >
+                    Date
+                </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>
-                    <input type="checkbox" class="checkbox">
+                <td class="col1">
                     File.pdf
                 </td>
-                <td class="text">3 mins ago</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
+                <td class="col2">
+                    3 mins ago
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots unactive">
+                        more_horiz
+                        </span>
+                    </a>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <input type="checkbox" class="checkbox" checked>
+                <td class="col1">
                     File.pdf
                 </td>
-                <td class="text">Yesterday</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
+                <td class="col2">
+                    Yesterday
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots unactive">
+                        more_horiz
+                        </span>
+                    </a>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <input type="checkbox" class="checkbox">
+                <td class="col1">
                     File.pdf
                 </td>
-                <td class="text">June 1st, 2019</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
+                <td class="col2">
+                    June 1st, 2019
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots unactive">
+                        more_horiz
+                        </span>
+                    </a>
                 </td>
             </tr>
         </tbody>
-    </table>
-
-    <table>
+        </table>
+    </div>
+    <div class="table">
+        <table class="file_table">
         <thead>
             <tr>
-                <th class="name2">
+                <th class="col1">
+                    <img class="minus-button" src="./img/minus.png" alt="Minus icon">
                     Name
-                    <img src="./img/triangle.png" alt="triangle">
+                    <a class="button" href="#">
+                        <span class="material-icons">
+                            arrow_drop_down
+                        </span>
+                    </a>  
                 </th>
-                <th class="date">Date</th>
-                <th>
-                    <div class="div">
-                        <input type="search" placeholder="Search" class="search">
-                    </div>
+                <th colspan="2" class="col2" >
+                    Date
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>
-                    <img src="./img/Untitled.png" alt="Untitled">
-                    File.pdf
+                <td class="col1">
+                    <input type="checkbox" id="file" name="file" >
+                    <label for="file">File.pdf</label>
                 </td>
-                <td class="text">3 mins ago</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
+                <td class="col2">
+                    3 mins ago
                 </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/Untitled.png" alt="Untitled">
-                    File.pdf
-                </td>
-                <td class="text">Yesterday</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots ">
+                        more_horiz
+                        </span>
+                    </a>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <img src="./img/Untitled.png" alt="Untitled">
-                    File.pdf
+                <td class="col1">
+                    <input type="checkbox" id="file-1" name="file" checked>
+                    <label for="file">File.pdf</label>
                 </td>
-                <td class="text">June 1st, 2019</td>
-                <td>
-                    <img src="./img/option.png" alt="option">
+                <td class="col2">
+                    Yesterday
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots ">
+                        more_horiz
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">
+                    <input type="checkbox" id="file=2" name="file" >
+                    <label for="file">File.pdf</label>
+                </td>
+                <td class="col2">
+                    June 1st, 2019
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots ">
+                        more_horiz
+                        </span>
+                    </a>
                 </td>
             </tr>
         </tbody>
-    </table>
+        </table>
+    </div>
+    <div class="table">
+        <table class="file_table">
+        <thead>
+            <tr>
+                <th class="col1">
+                    Name
+                    <a class="button" href="#">
+                        <span class="material-icons">
+                            arrow_drop_down
+                            </span>
+                    </a>
+                </th>
+                <th colspan="2" class="col2" >
+                    Date
+                        <input class="search" type="text" placeholder="Search" >
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col1">
+                    <span class="material-icons inventory">
+                        inventory_2
+                        </span>
+                        File.pdf
+                </td>
+                <td class="col2">
+                    3 mins ago
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots ">
+                        more_horiz
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">
+                    <span class="material-icons inventory">
+                        inventory_2
+                        </span>
+                        File.pdf
+                </td>
+                <td class="col2">
+                    Yesterday
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots ">
+                        more_horiz
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">
+                    <span class="material-icons inventory">
+                        inventory_2
+                        </span>
+                        File.pdf
+                </td>
+                <td class="col2">
+                    June 1st, 2019
+                </td>
+                <td class="col3">
+                    <a class="button" href="#">
+                        <span class="material-icons dots ">
+                        more_horiz
+                        </span>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
     
 </body>
 </html>
