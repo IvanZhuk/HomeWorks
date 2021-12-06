@@ -7,7 +7,7 @@
 
 .conteiner {
     max-width: 1460px;
-    padding: 0 20px;
+    padding: 0 5px;
     margin: 0 auto;
     position: relative;
 }
@@ -63,7 +63,7 @@
 }
 
 @media screen and (max-width: 720px) {
-    
+
     .header__img {
         display: none;
     }
@@ -80,6 +80,9 @@
     }
     .header__text {
         text-align: center;
+    }
+    .header__bottom {
+        display: flex;
     }
     .apple {
         margin-left: 20px;
@@ -155,14 +158,39 @@
     line-height: 23px;
     color: #4F4F4F;
     margin-top: 27px;
-}
+    margin-bottom: 22px;
+}    
 
 .experience__bottom {
+    text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
     color: #00ADEE;
-    margin-top: 22px;
+}
+
+@media screen and (max-width: 720px) {
+    .experience {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .experience__rigth {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .experience__top {
+        text-align: center;
+        margin-top: 54px;
+    }
+    .experience__tiitle {
+        text-align: center;
+        margin-top: 27px;
+    }
+    .experience__bottom {
+        display: block;
+        text-align: center;
+        padding-bottom: 22px;
+    }
 }
 
