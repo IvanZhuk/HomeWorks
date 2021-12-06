@@ -10,6 +10,7 @@
     padding: 0 5px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -115,17 +116,21 @@
     height: 100%;
 }
 
-.arsenal {
+.left__tv {
     position: absolute;
     top: 85px;
-    left: 90px;
+    left: 95px;
+}
+
+.arsenal {
+    position: relative;
     z-index: 4;
 }
 
 .TV {
     position: absolute;
-    top: 298px;
-    left: 268px;
+    top: 212px;
+    left: 180px;
     z-index: 3;
 }
 
@@ -191,6 +196,16 @@
         display: block;
         text-align: center;
         padding-bottom: 22px;
+    }
+    .arsenal {
+        max-width: 248px;
+        top: -50px;
+        left: -85px;
+    }
+    .TV {
+        max-width: 248px;
+        top: 60px;
+        left: 5px
     }
 }
 
