@@ -555,6 +555,9 @@ a {
     .footer__content {
         order: 2;
     }
+    .footer__link {
+        padding-right: 15px;
+    }
     .footer__right{
         order: 1;
         margin: 12px 0 34px 0;
