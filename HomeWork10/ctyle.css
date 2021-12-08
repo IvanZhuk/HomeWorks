@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: dimgrey;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 110px;
+   margin-bottom: 100px;
+}
+
+.line {
+    height: 6px;
+    width: 300px;
+    margin: 72px 0;
+    transition: 0.5s ease-in-out 0.5s;
+    background: linear-gradient(-270deg, #FFFFFF 0%, #FFFFFF 70%, dimgrey 70%, dimgrey 85%, #FFFFFF 85%, #FFFFFF 100%);
+}
+
+.swords {
+    cursor: pointer;
+}
+
+.swords::before,
+.swords::after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 300px;
+    transition: 0.7s ease-in-out 0.2s;
+    background: linear-gradient(270deg, #FFFFFF 0%, #FFFFFF 70%, dimgrey 70%, dimgrey 85%, #FFFFFF 85%, #FFFFFF 100%);
+}
+
+.swords:hover .line {
+    transition: 0.3s ease-in-out 0.5s;
+    visibility: hidden;
+}
+
+.swords:hover::before {
+    transform: translate(0, 70px) rotate(-40deg);
+    box-shadow: 0px 0px 32px 20px rgb(255, 10, 75);
+}
+
+.swords:hover::after {
+    transform: translate(0, -84px) rotate(-140deg);
+    box-shadow: 0px 0px 24px 16px rgb(1, 85, 255);
+}
+
+
+.content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    width: 408px;
+    border-color: rgb(39, 39, 39);
+    border-style: solid;
+    padding: 0 4em 2em 4em;
+    border-width: 0.4em 0.1em 4em 0.1em;
+}
+
+.loader span {
+    position: relative;
+    background-color: black;
+    width: 0.2em;
+    height: 10em;
+    transform-origin: top;
+}
+
+.loader span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    left: -1.5em;
+}
+
+.loader span:first-child {
+    animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
+    --direction: 1;
+}
+
+.loader span:last-child {
+    animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
+    --direction: -1;
+}
+
+@keyframes moving-up {
+  0%{
+    transform: rotate(0deg);
+  }
+    
+  50%{
+    transform: rotate(0deg);
+  }
+    
+  100%{
+    transform: rotate(calc(45deg * var(--direction)));
+  }
+}
